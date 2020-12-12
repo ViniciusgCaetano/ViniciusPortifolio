@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: linear-gradient(rgb(255, 255, 255),rgb(202, 202, 202));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0px;
+}
+h1{
+    margin-block-start: 0px;
+}
+header{
+    width: 100vw;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    letter-spacing: 5px;
+    border-bottom:5px solid black;
+    display: inline-block;
+    position: fixed;
+}
+
+.textoprincipal{
+    margin: 0px;
+    padding-top: 80px;
+    padding-right: 200px;
+    padding-left: 50px;
+    font-size: 15pt;
+    text-align: justify;
+    line-height: 30px;
+    text-indent: 20px;
+
+}
+
+footer{
+    background-color: rgb(145, 97, 26);
+}

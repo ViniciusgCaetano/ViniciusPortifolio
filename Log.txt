@@ -1,0 +1,17 @@
+==============ViniciusPortifólio============
+----------------| Primeira atualização | 12/12/20 |-----------------------
+Adicionados:
+Cabeçalho
+Rodapé
+Texto em Lorem Ipsum
+
+Retirados:
+Nada foi retirado.
+---------------------------------------------------------------------
+
+Lista de coisas para fazer:
+
+- Inserir imagens
+- Inserir Aside
+- Inserir aba de contato
+- Inserir Nav
