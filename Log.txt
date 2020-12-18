@@ -7,11 +7,18 @@ Texto em Lorem Ipsum
 
 Retirados:
 Nada foi retirado.
----------------------------------------------------------------------
+
+
+------------------| Segunda atualização |------------------| 18/12/20 |
+
+Adicionados:
+Melhorado o menu
+Nav inserido
 
 Lista de coisas para fazer:
 
 - Inserir imagens
 - Inserir Aside
 - Inserir aba de contato
-- Inserir Nav
+
+
