@@ -1,59 +1,103 @@
 *{
     margin: 0px;
     padding: 0px;
+
 }
 
 body{
-    background-image: linear-gradient(rgb(255, 255, 255),rgb(202, 202, 202));
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin: 0px;
-}
-h1{
-    margin-block-start: 2px;
-    display: inline-block;
+
+    background-color:rgb(22, 22, 22);
+    font-size: 20px;
+    overflow-x : hidden ;
+
 }
 
 header{
- overflow: hidden;
- width: 100%;
- margin:auto;
- background-color: rgba(0, 0, 0, 0.748);
- position: fixed;
- color: wheat;
- padding: 15px;
 
+    width: 95vw;
+    padding: 1vw 3vw 1vw 2vw;
+    height: 50px;
+    background-color: rgba(0,0,0,0.75);
+    color:rgb(255, 202, 88);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
 }
 
-.textoprincipal{
-    margin-bottom: 200px;
-    padding-top: 200px;
-    padding-right: 150px;
-    padding-left: 50px;
-    font-size: 15pt;
+header nav{
+    margin-top: 5px;
+    list-style: none;
+
+}
+
+
+header li, a{
+
+    text-decoration: none;
+    color:rgb(255, 202, 88);
+    margin-right: 2vw;
+    display: inline
+  
+}
+
+.principal{
+
+    padding: 25vh 3vw 25vh;
+    width: 90vw;
+    color: rgb(255, 255, 255);
     text-align: justify;
     line-height: 30px;
-    text-indent: 20px;
 
 }
 
-#lista{
-    float: right;
-    line-height: 30px;
-    margin-top: 2px;
-    margin-right: 5%;
-    letter-spacing: 2px;
+.subdivisao{
+
+    margin-bottom: 20vh;
+
 }
 
-li{
-    list-style: none;
-    display: inline-block;
-    margin-left: 15px;
+.subdivisao h1{
+
+    font-size: 35pt;
+    margin-bottom: 30px;
+
+}
+
+.subdivisao p{
+
+    width: 60vw;
+
 }
     
 footer{
-    width: 100%;
+    width: 80vw;
     height: 300px;
     background-color: rgb(145, 97, 26);
+    padding: 0 10vw 0 10vw;
+}
+
+@media (max-width: 520px)
+{
+    body{
+        font-size: 16px;
+    }
+    header{
+        margin-right: 30px;
+        text-align: center;  
+        padding-right: 15px;
+        overflow: auto;
+    }
+
+    .textoprincipal{
+        padding: 24px 24px 24px 24px;
+
+    }
+
+    nav{
+
+        float: none;
+        padding: 0;
+    }
 }
