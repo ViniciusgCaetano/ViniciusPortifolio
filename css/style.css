@@ -5,8 +5,7 @@
 }
 
 body{
-
-    background-color:rgb(57, 57, 57);
+    background-color:rgb(189, 189, 189);
     font-size: 20px;
     overflow-x : hidden ;
 
@@ -42,50 +41,59 @@ header li, a{
   
 }
 
-#apresentacao{
-    z-index: -1;
-    position: relative;
-    width: 100vw;
-    height: calc(100vw / 1.7);
-    top: calc(50px + 2vw);
-    padding: px;
-    text-align: center;
-    color: white;
-    background-image: url('../images/banner.png');
-}
+#demonstrações{
 
-.principal{
-    position: static;
-    padding: 25vh 3vw 25vh;
-    width: 90vw;
-    color: rgb(255, 255, 255);
-    text-align: justify;
-    line-height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+    padding: 50px;
+    width: 100vw - 100px;
+    background-color: rgb(250, 249, 249);
+    padding-top: 80px;
 
 }
 
-.subdivisao{
-
-    margin-bottom: 20vh;
-
-}
-
-.subdivisao h1{
-
-    font-size: 35pt;
-    margin-bottom: 30px;
-
-}
-
-.subdivisao p{
-
-    width: 60vw;
-
-}
+.projeto{
     
+    font-family: 'Helvetica';
+    padding: 20px;
+    background-color: rgb(155, 155, 155);
+    border-radius: 20px;
+    width: 200px;
+    height: 300px;
+    padding: center;
+    margin-bottom: 40px;
+
+}
+
+.projeto *{
+
+    
+    color:rgb(255, 255, 255);
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: large;
+    margin-bottom: 20px;
+}
+
+.projeto button{
+
+    border: 0;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    width: 80px;
+    height: 40px;
+
+}
+
+.projeto h4{font-size: 20pt;}
+
 footer{
     width: 80vw;
-    height: 300px;
+    height: 100px;
     background-color: rgb(145, 97, 26);
     padding: 0 10vw 0 10vw;
 }
