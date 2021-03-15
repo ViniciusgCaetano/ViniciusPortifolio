@@ -6,7 +6,7 @@
 
 body{
 
-    background-color:rgb(22, 22, 22);
+    background-color:rgb(57, 57, 57);
     font-size: 20px;
     overflow-x : hidden ;
 
@@ -42,8 +42,20 @@ header li, a{
   
 }
 
-.principal{
+#apresentacao{
+    z-index: -1;
+    position: relative;
+    width: 100vw;
+    height: calc(100vw / 1.7);
+    top: calc(50px + 2vw);
+    padding: px;
+    text-align: center;
+    color: white;
+    background-image: url('../images/banner.png');
+}
 
+.principal{
+    position: static;
     padding: 25vh 3vw 25vh;
     width: 90vw;
     color: rgb(255, 255, 255);
