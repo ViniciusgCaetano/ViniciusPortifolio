@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color:rgb(189, 189, 189);
+    background-color:rgb(196, 174, 120);
     font-size: 20px;
     overflow-x : hidden ;
 
@@ -16,12 +16,14 @@ header{
     width: 95vw;
     padding: 1vw 3vw 1vw 2vw;
     height: 50px;
-    background-color: rgb(0, 62, 81);
-    color: rgb(255, 255, 255);
+    background-color: rgb(23, 21, 21);
+    color: rgb(249, 246, 240);
     position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 999;
+
     
 }
 
@@ -35,10 +37,29 @@ header nav{
 header li, a{
 
     text-decoration: none;
-    color:rgb(255, 202, 88);
+    color: rgb(236, 211, 148);
     margin-right: 2vw;
-    display: inline
+    display: inline;
   
+}
+
+#apresentacao{
+    background-image: url(../images/banner.png);
+}
+#apresentacao img{
+    transition-duration: 0.75s ;
+
+}
+
+#apresentacao img:hover{
+    filter: brightness(50%)
+}
+
+.subtitulo{
+    text-align: center;
+    font-family: Helvetica;
+
+
 }
 
 #demonstrações{
@@ -50,7 +71,7 @@ header li, a{
     align-items: center;
     padding: 2.5vw;
     width: 95vw;
-    background-color: rgb(250, 249, 249);
+    background-color: rgb(196, 174, 120);
 
 }
 
@@ -104,7 +125,10 @@ header li, a{
 
 }
 
-.projeto h4{font-size: 20pt; display: block;}
+.projeto h4{
+    font-size: 20pt; 
+    display: block;
+}
 
 footer{
     width: 100;
