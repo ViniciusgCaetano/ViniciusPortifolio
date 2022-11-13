@@ -47,4 +47,9 @@
   footer {
     background: #212529;
   }
+
+
+.container-fluid{
+    max-width: 90%;
+}
   
