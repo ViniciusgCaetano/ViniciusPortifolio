@@ -3,77 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
     <link rel="icon" type="imagem/ico" href="images/icone_vc.ico">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
     <title>Vinícius Caetano</title>
 </head>
 
 <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Vinícius Caetano</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Página Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dashboards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projetos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Full Page Image Header with Vertically Centered Content -->
     <header>
-        <h1>Vinícius Caetano</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#quem_sou">Quem Sou</a>
-                </li>
-                <li>
-                    <a href="#projetos">Projetos</a>
-                </li>
-                <li>
-                    <a href="#contatos">Contatos</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="apresentacao">
-        <!-- <img src="images/banner.jpg" alt="banner" width=100%> -->
-        <h1>Codando o mundo!</h1>
-
-    </section>
-    <h3 class="subtitulo">Confira alguns de meus projetos</h3>
-    <section id="demonstrações">
-        
-        <div class="projeto">
-            <h4>Excel</h4>
-            <img src="images/logo-excel.png" alt="Excel" width="100px" height="100px">
-            <p>
-                Alguns trabalhos que eu fiz utilizando o Excel e suas funções.
-            </p>
-            <button>Ver mais</button>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('https://source.unsplash.com/RCAhiGJsUUE/1920x1080')">
+              <div class="carousel-caption">
+                <h5>Data Analytics</h5>
+                <p>Busco sempre utilizar a análise dos dados disponíveis para extrair insights e melhores resultados para as organizações.</p>
+              </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('https://source.unsplash.com/wfh8dDlNFOk/1920x1080')">
+              <div class="carousel-caption">
+                <h5>Programação</h5>
+                <p>Vejo o código e as ferramentas de programação como sendo os meios pelos quais agregarei valor para os negócios.</p>
+              </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('images/slide1.png')">
+              <div class="carousel-caption">
+                <h5>Inovação</h5>
+                <p>Com estudos focados em administração e gestão, também trabalho com tópicos que não são necessariamente de técnologia.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-
-        <div class="projeto">
-            <h4>PPoint</h4>
-            <img src="images/logo-powerpoint.png" alt="PowerPoint" width="100px" height="100px">
-            <p>
-                Aqui você verá uma variedade de histórias contadas em .PPTX.
-            </p>
-            <button>Ver mais</button>
+      </header>
+      
+      <!-- Page Content -->
+      <section class="py-5 text-white">
+        <div class="container">
+          <h1 class="fw-dark">Trazendo valor através da tecnologia!</h1>
+          <p class="lead">Seja bem vindo ao meu site, que eu usarei como agregador para os meus projetos.</p>
         </div>
+      </section>
 
-        <div class="projeto">
-            <h4>Python</h4>
-            <img src="images/logo-python.png" alt="Python" >
-            <p>
-                Projetos utilizando a linguagem mais famosa no momento!
-            </p>
-            <button>Ver mais</button>
+      <section class="py-5 text-white">
+        <div class="container">
+          <h1 class="fw-dark">Sobre mim</h1>
+          <p class="lead">Seja bem vindo ao meu site, que eu usarei como agregador para os meus projetos.</p>
         </div>
-        <div>
+      </section>
 
-            
+      <section class="py-5 text-white ">
+        <div class="container">
+          <h1 class="fw-dark">Tecnologias que uso</h1>
+          <p class="lead">Seja bem vindo ao meu site, que eu usarei como agregador para os meus projetos.</p>
         </div>
-    </section>
+      </section>
 
-    <section id="quem_sou">
-        <h3>Quem Sou</h3>
+      <section class="py-5 text-white">
+        <div class="container">
+          <h1 class="fw-dark ">Onde já trabalhei</h1>
+          <p class="lead">Seja bem vindo ao meu site, que eu usarei como agregador para os meus projetos.</p>
+        </div>
+      </section>
 
-    </section>
 
-        
-    <footer>
-        <p>Este site e seu código pode ser encontrado <a href="https://github.com/ViniciusgCaetano/ViniciusPortifolio"> neste repositório</a> </p>
+
+      
+      <footer class="w-100 py-4 flex-shrink-0">
+        <div class="container py-4">
+            <div class="row gy-4 gx-5">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="h1 text-white">Vinícius Caetano.</h5>
+                    <p class="small text-muted">Esse é um site para mostrar meus projetos. Todo o código utilizado está disponível aqui</p>
+                    <p class="small text-muted mb-0">&copy; Vinícius Caetano <a class="text-primary" href="#">viniciuscaetano.tech</a></p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Quick links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Get started</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Onde me encontrar</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="https://www.linkedin.com/in/viniciusgcaetano/">LinkedIn</a></li>
+                        <li><a href="https://github.com/ViniciusgCaetano">Github</a></li>
+                        <li><a href="mailto:viniciusgcaetano@hotmail.com">E-mail</a></li>
+                        <li><a href="https://www.codewars.com/users/ViniciusgCaetano">Codewars</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-3">Newsletter</h5>
+                    <p class="small text-muted">No futuro, irei criar uma newsletter, coloque seu e-mail abaixo para se inscrever..</p>
+                    <form action="#">
+                        <div class="input-group mb-3">
+                            <input class="form-control" type="text" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button class="btn btn-primary" id="button-addon2" type="button"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
