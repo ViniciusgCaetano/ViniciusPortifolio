@@ -53,3 +53,7 @@
     max-width: 90%;
 }
   
+.card{
+    margin-left: auto;
+    margin-right: auto;
+}
