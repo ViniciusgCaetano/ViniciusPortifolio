@@ -56,4 +56,14 @@
 .card{
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.tecnologias-grid{
+
+    display: grid;
+    grid-column-gap: 3em;
+    grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
+    
 }
