@@ -19,17 +19,28 @@ axios.get('https://corsproxy.io/?https%3A%2F%2Fmedium.com%2Ffeed%2F%40ViniCaetan
         newContainer.setAttribute('class', 'container')
         newDiv.appendChild(newContainer);
 
-        var breakLine = document.createElement('br');
-        newDiv.appendChild(breakLine);
-        
+        var breakLine1 = document.createElement('br');
+        var breakLine2 = document.createElement('br');
+        newDiv.appendChild(breakLine1);
+        newDiv.appendChild(breakLine2);
+
         var newAnchor = document.createElement('a');
         newAnchor.setAttribute('href',  data['rss']['channel']['item'][index]['link']['_text'])
+        newAnchor.setAttribute('target', '_blank')
         newContainer.appendChild(newAnchor)
 
         var newText = document.createElement('h1');
         newText.setAttribute('class', 'display-4')
         newText.appendChild(document.createTextNode(data['rss']['channel']['item'][index]['title']['_cdata']));
         newAnchor.appendChild(newText)
+        
+
+        var newDate = document.createElement('p');
+
+        newDate.appendChild(document.createTextNode(data['rss']['channel']['item'][index]['pubDate']['_text']));
+
+        newDiv.appendChild(newAnchor)
+        newDiv.appendChild(newDate)
         node.appendChild(newDiv);
 
         
