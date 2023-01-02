@@ -1,7 +1,15 @@
 {
   "dependencies": {
     "axios": "^1.2.1",
+    "browserify": "^17.0.0",
+    "minify": "^9.1.0",
     "xml-js": "^1.6.11"
   },
-  "type": "module"
+  "type": "module",
+  "scripts": {
+    "browserify": "browserify ./xml2js.js  -s xml2js -o ./xml2js.js",
+    "minify": "cat ./xml2js.js  | uglifyjs > ./xml2js.min.js",
+    "buildxml2js": "browserify ./node_modules/xml-js/dist/xml-js.js -o ./public/lib/xml-js.js"
+
+  }
 }
