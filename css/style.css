@@ -61,10 +61,32 @@
     border-radius: 5pt;
 }
 
+.card div a{
+
+    float: bottom;
+}
+
+.card img{
+    aspect-ratio: 10 / 6;
+}
+
+.dashboard_card{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5vh;
+    margin-top: 1%;
+    border-radius: 5pt;
+}
+
+
 .tecnologias-grid{
 
     display: grid;
     grid-column-gap: 3em;
     grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
     
+}
+
+.dashboard-grid{
+    grid-template-columns: repeat(auto-fill, minmax(30em, 1fr));
 }
