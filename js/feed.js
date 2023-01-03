@@ -41,7 +41,11 @@ axios.get('https://corsproxy.io/?https%3A%2F%2Fmedium.com%2Ffeed%2F%40ViniCaetan
 
         newDiv.appendChild(newAnchor)
         newDiv.appendChild(newDate)
+        var newLine = document.createElement('hr');
+        newLine.setAttribute('class', 'bg-white border-2 border-top')
+        newLine.setAttribute('style', 'width: 80%; margin: auto;')
         node.appendChild(newDiv);
+        node.appendChild(newLine)
 
         
         
